@@ -32,7 +32,7 @@ public class CajaDeAhorro extends Cuenta {
         if (monto <= 0) {
             System.out.println("Monto ingresado invalido");
         }
-        if (getSaldo() >= monto) {
+        else if (getSaldo() >= monto) {
             setSaldo(getSaldo() - monto);
         }
         else{

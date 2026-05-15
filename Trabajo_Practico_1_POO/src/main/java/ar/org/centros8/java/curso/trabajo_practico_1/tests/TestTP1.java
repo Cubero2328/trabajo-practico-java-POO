@@ -77,7 +77,7 @@ public class TestTP1 {
         cuentaConvertibilidad1.convertirADolares(70000, 1400);
         System.out.println(cuentaConvertibilidad1);
         System.out.println("****CuentaCorriente funcionando*****");
-
+        
     }
 
 }

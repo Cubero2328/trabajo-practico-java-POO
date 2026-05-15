@@ -1,5 +1,4 @@
 package ar.org.centros8.java.curso.trabajo_practico_1.entidades.cuentas;
-
 import ar.org.centros8.java.curso.trabajo_practico_1.entidades.clientes.ClienteEmpresa;
 import lombok.ToString;
 
@@ -17,7 +16,7 @@ public class CuentaConvertibilidad extends CuentaCorriente {
         if (montoEnPeso <= getSaldo()) {
             System.out.println("Sr. Cliente la compra en dolares es solo con saldo en cuenta.");
             setSaldo(getSaldo() - montoEnPeso);
-            saldoEnDolares = Math.round((saldoEnDolares + (montoEnPeso / precioDolar)) * 100.0) / 100.0;
+            this.saldoEnDolares = Math.round((saldoEnDolares + (montoEnPeso / precioDolar)) * 100.0) / 100.0;
             return saldoEnDolares;
         } else {
             System.out.println("Saldo en pesos insuficiente para realizar la operacion");

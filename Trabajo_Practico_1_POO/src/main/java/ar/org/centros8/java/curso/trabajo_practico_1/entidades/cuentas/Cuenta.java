@@ -10,7 +10,7 @@ import lombok.ToString;
 @ToString
 public abstract class Cuenta {
     private int nroDeCuenta;
-    private Cliente clienteAsociado;
+    private final Cliente clienteAsociado;
     private double saldo;
 
     public Cuenta(int nroDeCuenta, Cliente clienteAsociado) {

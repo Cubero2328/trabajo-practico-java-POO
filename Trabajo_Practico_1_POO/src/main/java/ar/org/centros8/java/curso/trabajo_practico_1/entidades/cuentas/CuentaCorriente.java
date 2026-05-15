@@ -33,7 +33,7 @@ public class CuentaCorriente extends Cuenta {
         if (monto <= 0) {
             System.out.println("Monto ingresado invalido");
         }
-        if (getSaldo() + giroEnDescubierto >= monto) {
+        else if (getSaldo() + giroEnDescubierto >= monto) {
             setSaldo(getSaldo() - monto);
         } else {
             System.out.println("Supera el límite de descubierto");
